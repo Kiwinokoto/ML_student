@@ -1,0 +1,19 @@
+[MASTER]
+
+# Ignore certain errors or warnings
+# C0303 = trailing whitespaces, should be fixed by vscode using Autopep8 now
+# C0301 = line too long
+disable = C0301
+
+[FORMAT]
+
+# Set the line length to a value that suits your project
+max-line-length = 120
+
+[BAD-NAMES]
+
+# Ignore short variable names
+# I agree variable names should be explicit
+# but sometimes, i, x, y, t, etc... are fine
+short-variable-name =
+  [a-zA-Z]
