@@ -1,4 +1,4 @@
-conda create -n myenv_p5 python=3.11.4 jupyter numpy pandas matplotlib seaborn statsmodels scipy scikit-learn tensorflow xgboost shap lime plotly yellowbrick mlflow
+conda create -n myenv_p5 python=3.11.4 jupyter numpy pandas matplotlib seaborn statsmodels scipy scikit-learn tensorflow xgboost shap lime plotly yellowbrick mlflow requests
 
 conda activate myenv_p5
 
