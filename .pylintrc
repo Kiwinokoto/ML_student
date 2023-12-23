@@ -1,8 +1,8 @@
 # Commande console :
-#
+# pylint your_script.py
 
 # Commande spécifique aux notebooks :
-#  
+# nbqa pylint your_notebook.ipynb
 
 [MASTER]
 
