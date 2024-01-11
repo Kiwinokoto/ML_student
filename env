@@ -4,6 +4,7 @@ conda activate myenv_p5
 
 conda deactivate
 
+# requirements
 # conda list --export >> env
 
 # This file may be used to create an environment using:
