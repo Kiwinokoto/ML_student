@@ -1,6 +1,9 @@
 artifact_location: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow1_artifacts
 creation_time: 1705138449722
 experiment_id: '434671109481285144'
-last_update_time: 1705138449722
-lifecycle_stage: active
+last_update_time: 1705147355523
+lifecycle_stage: deleted
 name: testing_mlflow10
+tags:
+  env: dev
+  version: 1.0.0
