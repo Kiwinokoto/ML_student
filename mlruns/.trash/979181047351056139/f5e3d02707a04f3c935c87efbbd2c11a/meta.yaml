@@ -1,0 +1,16 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/model_signature_artifacts/f5e3d02707a04f3c935c87efbbd2c11a/artifacts
+deleted_time: 1705233920544
+end_time: 1705233794110
+entry_point_name: ''
+experiment_id: '979181047351056139'
+lifecycle_stage: deleted
+run_id: f5e3d02707a04f3c935c87efbbd2c11a
+run_name: logging_models
+run_uuid: f5e3d02707a04f3c935c87efbbd2c11a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705233790602
+status: 3
+tags: []
+user_id: ubuntu
