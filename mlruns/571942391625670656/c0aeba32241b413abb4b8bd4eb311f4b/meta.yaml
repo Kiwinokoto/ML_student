@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow42_artifacts/c0aeba32241b413abb4b8bd4eb311f4b/artifacts
+end_time: 1705308163170
+entry_point_name: ''
+experiment_id: '571942391625670656'
+lifecycle_stage: active
+run_id: c0aeba32241b413abb4b8bd4eb311f4b
+run_name: autolog
+run_uuid: c0aeba32241b413abb4b8bd4eb311f4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705308161042
+status: 3
+tags: []
+user_id: ubuntu

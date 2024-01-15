@@ -1,0 +1,12 @@
+digest: 56a39a81
+name: dataset
+profile: '{"num_rows": 200, "num_elements": 2000}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "feature_0"}, {"type": "double",
+  "name": "feature_1"}, {"type": "double", "name": "feature_2"}, {"type": "double",
+  "name": "feature_3"}, {"type": "double", "name": "feature_4"}, {"type": "double",
+  "name": "feature_5"}, {"type": "double", "name": "feature_6"}, {"type": "double",
+  "name": "feature_7"}, {"type": "double", "name": "feature_8"}, {"type": "double",
+  "name": "feature_9"}]}'
+source: '{"tags": {"mlflow.user": "ubuntu", "mlflow.source.name": "/home/ubuntu/anaconda3/envs/myenv_p5/lib/python3.11/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

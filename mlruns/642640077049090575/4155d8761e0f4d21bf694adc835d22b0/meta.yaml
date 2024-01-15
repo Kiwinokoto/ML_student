@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow1_artifacts/4155d8761e0f4d21bf694adc835d22b0/artifacts
+end_time: 1705307639779
+entry_point_name: ''
+experiment_id: '642640077049090575'
+lifecycle_stage: active
+run_id: 4155d8761e0f4d21bf694adc835d22b0
+run_name: dashing-boar-45
+run_uuid: 4155d8761e0f4d21bf694adc835d22b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705307639774
+status: 3
+tags: []
+user_id: ubuntu
