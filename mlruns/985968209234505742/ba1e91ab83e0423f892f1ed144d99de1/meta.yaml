@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/model_signature_artifacts/ba1e91ab83e0423f892f1ed144d99de1/artifacts
+end_time: 1705321051217
+entry_point_name: ''
+experiment_id: '985968209234505742'
+lifecycle_stage: active
+run_id: ba1e91ab83e0423f892f1ed144d99de1
+run_name: model_signature_inference
+run_uuid: ba1e91ab83e0423f892f1ed144d99de1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705321048151
+status: 3
+tags: []
+user_id: ubuntu

@@ -1,4 +1,4 @@
-conda create -n myenv_p5 python==3.11.4 pip requests pandarallel jupyter numpy pandas nltk spacy matplotlib plotly seaborn wordcloud pillow statsmodels scipy scikit-learn gensim pyLDAvis tensorflow xgboost shap yellowbrick mlflow
+conda create -n myenv_p5 python==3.11.4 pip virtualenv requests pandarallel jupyter numpy pandas nltk spacy matplotlib plotly seaborn wordcloud pillow statsmodels scipy scikit-learn gensim pyLDAvis tensorflow xgboost shap yellowbrick mlflow
 
 conda activate myenv_p5
 

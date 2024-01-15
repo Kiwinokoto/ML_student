@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/serving_multiple_models/44f0b73b5a9b4e60b844074a5ffc3324/artifacts
+end_time: 1705318910974
+entry_point_name: ''
+experiment_id: '989629764410697191'
+lifecycle_stage: active
+run_id: 44f0b73b5a9b4e60b844074a5ffc3324
+run_name: multiple_models
+run_uuid: 44f0b73b5a9b4e60b844074a5ffc3324
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705318910065
+status: 3
+tags: []
+user_id: ubuntu

@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow1_artifacts/2d7d9a87de5e4e1c9e2855a503502a1e/artifacts
+end_time: 1705316635729
+entry_point_name: ''
+experiment_id: '642640077049090575'
+lifecycle_stage: active
+run_id: 2d7d9a87de5e4e1c9e2855a503502a1e
+run_name: grandiose-stork-668
+run_uuid: 2d7d9a87de5e4e1c9e2855a503502a1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705316635723
+status: 3
+tags: []
+user_id: ubuntu
