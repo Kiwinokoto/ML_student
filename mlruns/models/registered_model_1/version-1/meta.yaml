@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1705334355684
+current_stage: None
+description: This is a test model version
+last_updated_timestamp: 1705334427417
+name: registered_model_1
+run_id: caf9ab55c5584c38b24a133bf2fc8f2f
+run_link: ''
+source: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/model_registry_artifacts/caf9ab55c5584c38b24a133bf2fc8f2f/artifacts/rft_model2
+status: READY
+status_message: null
+storage_location: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/model_registry_artifacts/caf9ab55c5584c38b24a133bf2fc8f2f/artifacts/rft_model2
+user_id: null
+version: 1

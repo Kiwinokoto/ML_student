@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1705331425575
+current_stage: None
+description: ''
+last_updated_timestamp: 1705331425575
+name: CustomModel
+run_id: eaa2cb2cad61458387e7c6b1c21b448b
+run_link: ''
+source: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/model_registry_artifacts/eaa2cb2cad61458387e7c6b1c21b448b/artifacts/custom_model
+status: READY
+status_message: null
+storage_location: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/model_registry_artifacts/eaa2cb2cad61458387e7c6b1c21b448b/artifacts/custom_model
+user_id: null
+version: 1

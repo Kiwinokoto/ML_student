@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow1_artifacts/b07501f2d3d44320a2d8b2f933fa9af7/artifacts
+end_time: 1705333923651
+entry_point_name: ''
+experiment_id: '642640077049090575'
+lifecycle_stage: active
+run_id: b07501f2d3d44320a2d8b2f933fa9af7
+run_name: unleashed-skunk-917
+run_uuid: b07501f2d3d44320a2d8b2f933fa9af7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705333923625
+status: 3
+tags: []
+user_id: ubuntu

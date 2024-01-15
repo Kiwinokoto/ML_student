@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/nested_run_artifacts/8e7492f3dbc64993a80ce28380a077d1/artifacts
+end_time: 1705333933241
+entry_point_name: ''
+experiment_id: '125066390431487630'
+lifecycle_stage: active
+run_id: 8e7492f3dbc64993a80ce28380a077d1
+run_name: parent
+run_uuid: 8e7492f3dbc64993a80ce28380a077d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705333933121
+status: 3
+tags: []
+user_id: ubuntu

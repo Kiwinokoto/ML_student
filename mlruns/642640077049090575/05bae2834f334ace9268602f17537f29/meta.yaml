@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow1_artifacts/05bae2834f334ace9268602f17537f29/artifacts
+end_time: 1705334337376
+entry_point_name: ''
+experiment_id: '642640077049090575'
+lifecycle_stage: active
+run_id: 05bae2834f334ace9268602f17537f29
+run_name: charming-grub-436
+run_uuid: 05bae2834f334ace9268602f17537f29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705334337363
+status: 3
+tags: []
+user_id: ubuntu

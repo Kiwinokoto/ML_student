@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1705333942276
+current_stage: None
+description: ''
+last_updated_timestamp: 1705333942276
+name: RandomForestRegressor
+run_id: b1daea61df0c42068a8949e77443d369
+run_link: ''
+source: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/model_registry_artifacts/b1daea61df0c42068a8949e77443d369/artifacts/rfr_model
+status: READY
+status_message: null
+storage_location: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/model_registry_artifacts/b1daea61df0c42068a8949e77443d369/artifacts/rfr_model
+user_id: null
+version: 2
