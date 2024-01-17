@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow1_artifacts/e10b44b5cf454573af8a5e1426cfb5ae/artifacts
+end_time: 1705505202772
+entry_point_name: ''
+experiment_id: '815061926383152961'
+lifecycle_stage: active
+run_id: e10b44b5cf454573af8a5e1426cfb5ae
+run_name: capricious-snipe-254
+run_uuid: e10b44b5cf454573af8a5e1426cfb5ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705505202761
+status: 3
+tags: []
+user_id: ubuntu

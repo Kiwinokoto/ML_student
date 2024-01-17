@@ -1,9 +1,0 @@
-artifact_location: /home/ubuntu/Bureau/OC/Projet5_oudelet_kevin/notebooks/testing_mlflow42_artifacts
-creation_time: 1705233988959
-experiment_id: '394315656495545012'
-last_update_time: 1705307631336
-lifecycle_stage: deleted
-name: another_test
-tags:
-  env: dev
-  version: 1.0.0
