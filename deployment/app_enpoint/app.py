@@ -99,7 +99,10 @@ def preprocess_text(text):
 
 app = Flask(__name__)
 
-@app.route('/predict') # , methods=['POST'])
+@app.route('/predict', methods=['POST'])
+def hello():
+    return "Hello World!"
+
 def predict_topics():
     try:
         # Get content from the POST request
@@ -128,9 +131,10 @@ def predict_topics():
         return jsonify({'error': str(e)})
 
 
-def hello():
-    return "Hello World!"
-
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # local
+    # app.run(debug=True)
+
+    # Run the app on 0.0.0.0 (accessible externally) and port 5000
+    app.run(host='0.0.0.0', port=5000, debug=True)
