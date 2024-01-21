@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Topics Prediction</h2>
-    <form action="predict.php" method="post">
+    <form action="https://www.kiwinokoto.com.5000/predict" method="post">
         <label for="content">Enter your content:</label><br>
         <textarea id="content" name="content" rows="4" cols="50"></textarea><br><br>
         <input type="submit" value="Predict Topics">
