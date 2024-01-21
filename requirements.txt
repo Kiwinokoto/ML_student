@@ -20,4 +20,6 @@ pyLDAvis
 tensorflow
 xgboost
 flask
+# ?
+joblib
 mlflow==2.9.2
