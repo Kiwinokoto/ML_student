@@ -21,4 +21,5 @@ tensorflow
 xgboost
 flask
 joblib
+pytest
 mlflow==2.9.2
