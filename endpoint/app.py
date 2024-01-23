@@ -6,12 +6,13 @@ import json
 
 app = Flask(__name__)
 
+
 @app.route('/predict/', methods=['GET', 'POST'])
 def endpoint():
     try:
         if request.method == 'POST':
             # Get the data from the form
-            query_text = request.form.get('query_text', '')
+            query_text = request.form.get('query_text')
 
             # ! security check here
 
@@ -28,30 +29,38 @@ def endpoint():
         # Handle errors
         return str(e)
 
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     try:
         if request.method == 'POST':
-            # Get the data from the form
-            query_text = request.form.get('user_input_text', '')
+            if request.form.get('query_text'): # on a une reponse du modele
+                result = request.form.get('query_text')
 
-            # ! security check here
+                return render_template('index.html', user_input_text='', result=result)
 
-            # send request
+            elif request.form.get('user_input_text'): # on a un input, il faut appeler le modele
+                # Get the data from the form
+                user_input_text = request.form.get('user_input_text')
 
+                # ! security check here
 
-            # Convert the data to uppercase
-            uppercase_text = query_text.upper()
+                # Make a synchronous request to /predict/ endpoint
+                answer = requests.post('https://www.kiwinokoto.com/predict/', data={'query_text': user_input_text})
+                result = answer.text
 
-            # Return the result
-            return render_template('index.html', user_input_text=query_text, result=uppercase_text)
+                # Return the result
+                return render_template('index.html', user_input_text=user_input_text, result=result)
 
-        else:
+            else: # bizarre
+                return 'hello world ???'
+        else: # first time
             return render_template('index.html', user_input_text='Please type something', result='')
 
     except Exception as e:
         # Handle errors
         return str(e)
+
 
 if __name__ == "__main__":
     # local
