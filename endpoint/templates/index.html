@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topics Prediction Form</title>
+    </head>
+    <body>
+        <h2>Please enter text here</h2>
+        <form action="https://www.kiwinokoto.com.5000/predict" method="post">
+            <label for="content">Enter your content:</label><br />
+            <textarea id="content" name="query_text" rows="4" cols="50"></textarea><br /><br />
+            <input type="submit" value="here" />
+        </form>
+
+        {% if result %}
+        <div>Result: {{ result }}</div>
+        {% endif %}
+    </body>
+</html>
