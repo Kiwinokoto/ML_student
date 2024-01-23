@@ -6,12 +6,12 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/predict/', methods=['POST'])
+@app.route('/predict/', methods=['GET', 'POST'])
 def endpoint():
     try:
         if request.method == 'POST':
             # Get the data from the form
-            query_text = request.form['query_text']
+            query_text = request.form.get('query_text', '')
 
             # ! security check here
 
@@ -19,24 +19,39 @@ def endpoint():
             uppercase_text = query_text.upper()
 
             # Return the result
-            return uppercase_text
+            return uppercase_text, 200
+
+        else:
+            return 'hello world!'
 
     except Exception as e:
         # Handle errors
         return str(e)
 
-@app.route('/', methods=['POST'])
-def index():
-    if request.method == 'POST':
-        # Handle form submission here
-        input_text = request.form.get('inputText', '')
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    try:
+        if request.method == 'POST':
+            # Get the data from the form
+            query_text = request.form.get('user_input_text', '')
 
-        # Perform any processing or make predictions here
-        result = f'Result for input: {input_text}'
+            # ! security check here
 
-        return render_template('index.html', result=result)
+            # send request
 
-    return render_template('index.html', result=None)
+
+            # Convert the data to uppercase
+            uppercase_text = query_text.upper()
+
+            # Return the result
+            return render_template('index.html', user_input_text=query_text, result=uppercase_text)
+
+        else:
+            return render_template('index.html', user_input_text='Please type something', result='')
+
+    except Exception as e:
+        # Handle errors
+        return str(e)
 
 if __name__ == "__main__":
     # local

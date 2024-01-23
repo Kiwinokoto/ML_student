@@ -4,11 +4,19 @@
         <title>Topics Prediction Form</title>
     </head>
     <body>
-        <h2>Please enter text here</h2>
-        <form action="https://www.kiwinokoto.com.5000/predict" method="post">
+        <h2>Tag prediction tool</h2>
+        <form action="/" method="post">
             <label for="content">Enter your content:</label><br />
-            <textarea id="content" name="query_text" rows="4" cols="50"></textarea><br /><br />
-            <input type="submit" value="here" />
+            <textarea
+                id="content"
+                name="user_input_text"
+                rows="4"
+                cols="50"
+                placeholder="{{user_input_text}}"
+                autofocus
+            ></textarea
+            ><br /><br />
+            <input type="submit" value="Send" />
         </form>
 
         {% if result %}
