@@ -34,12 +34,7 @@ def endpoint():
 def home():
     try:
         if request.method == 'POST':
-            if request.form.get('query_text'): # on a une reponse du modele
-                result = request.form.get('query_text')
-
-                return render_template('index.html', user_input_text='', result=result)
-
-            elif request.form.get('user_input_text'): # on a un input, il faut appeler le modele
+            if request.form.get('user_input_text'): # on a un input, il faut appeler le modele
                 # Get the data from the form
                 user_input_text = request.form.get('user_input_text')
 
@@ -54,6 +49,7 @@ def home():
 
             else: # bizarre
                 return 'hello world ???'
+
         else: # first time
             return render_template('index.html', user_input_text='Please type something', result='')
 
