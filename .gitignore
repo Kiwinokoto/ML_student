@@ -1,8 +1,8 @@
 # folders too big for github :
 
 # our data
-data/
+0_data/
 
 # the tracking of run info by mlflow
-notebooks/artifacts/
-notebooks/mlruns/
+1_4_notebooks/artifacts/
+1_4_notebooks/mlruns/
