@@ -9,6 +9,8 @@ app = Flask(__name__)
 
 @app.route('/predict/', methods=['GET', 'POST'])
 def endpoint():
+    # recup model
+
     try:
         if request.method == 'POST':
             # Get the data from the form
