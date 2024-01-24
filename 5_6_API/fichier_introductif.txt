@@ -1,0 +1,38 @@
+## objectif du projet : deployer en ligne un modele de prediction de tags
+
+
+## découpage des dossiers :
+
+
+0_data : nos donnees, contient 2 sous-dossiers
+
+    raw_data = les questions stackoverflow telechargees par requete sql (compressees .zip)
+    cleaned_data = le resultat du preprocessing, nos questions transformees en listes de tokens et filtrees, pretes a etre embedded 
+                   + la liste des mots interdits (stopwords + fitre frequence)
+
+1_4_notebooks : 
+
+    les livrables 1 a 4 du projet 
+    + environnement mlfow : 2 sous-dossiers, artifacts et mlruns
+
+5_6_API :
+
+    app.py = le code de l'api (endpoint) https://www.kiwinokoto.com/predict
+    templates/index.html = le point d'entree (formulaire html) https://www.kiwinokoto.com/ 
+    requirements.txt = les packages utilises cote serveur (virtualenv)
+    fichier_introductif = vous etes ici
+
+7_8_note_presentation : contient 2 fichiers
+
+    note_technique_MLOps.odt = la dissert blabla mlops
+    presentation.odp = les slides
+
+tests : nos T.U. pytest
+
+
+# fichiers racine :
+
+    README.md = le fichier introductif pour github
+    requirements.txt = environnement local (pour conda, 
+                       pour l'utiliser avec virtualenv il faut décommenter la premiere ligne : python==3.11.5)
+    3 fichiers caches : configuration git, prettier (extension vscode), pylint
