@@ -38,6 +38,10 @@ from sklearn.neighbors import KNeighborsRegressor
 import mlflow.pyfunc
 
 
+train = pd.read_csv('./../0_data/cleaned_data/train_bow_uniques.csv', sep=',')
+test = pd.read_csv('./../0_data/cleaned_data/test_bow_uniques.csv', sep=',')
+
+
 def turn_str_back_into_list(df):
     """Correct the type change due to .csv export"""
 
@@ -47,15 +51,8 @@ def turn_str_back_into_list(df):
     df['body_spacy'] = df['body_spacy'].apply(ast.literal_eval)
     df['all_tags'] = df['all_tags'].apply(ast.literal_eval)
 
-
-train = pd.read_csv('./train_bow_uniques.csv', sep=',')
-test = pd.read_csv('./test_bow_uniques.csv', sep=',')
-
 turn_str_back_into_list(train)
 turn_str_back_into_list(test)
-
-
-# fonctions preprocessing (remplacer par un import)
 
 
 def preprocess_text(text):
@@ -148,7 +145,7 @@ class SpecialKnn(mlflow.pyfunc.PythonModel):
 
     def load_context(self, context):
         # when instance is created
-        # on l'utilisera + tard ?
+        # self'fit(train_df=train, feature='title_nltk', target='all_tags') ?
         pass
 
 
@@ -184,87 +181,11 @@ class SpecialKnn(mlflow.pyfunc.PythonModel):
 
         return predicted_tags
 
-# recup model
 
-# model = pickle.load(open('./knn_model.pkl', 'rb'))
-# model = SpecialKnn(k=25)
-# model.fit(train_df=train, feature='title_nltk', target='all_tags')
+def main():
+    main_knn = SpecialKnn('30')
+    with open('main_knn.pkl', 'wb') as f:
+        pickle.dump([main_knn], f, -1)
 
-
-app = Flask(__name__)
-
-
-@app.route('/predict/', methods=['GET', 'POST'])
-def endpoint():
-    try:
-        if request.method == 'POST':
-            # recup model
-            try:
-                model = pickle.load(open('./main_knn.pkl', 'rb'))
-                # model = SpecialKnn(k=25)
-                model.fit(train_df=train, feature='title_nltk', target='all_tags')
-
-            except Exception as e:
-                # Return a generic error message
-                return f"An error occurred while importing model: {str(e)}", 500
-
-            # Get the data from the form
-            query_text = request.form.get('query_text')
-
-            # ! security check here
-            # + gerer empty if not done before ?
-
-            # Convert the data to uppercase
-            # uppercase_text = query_text.upper()
-
-            # use model to predict tags
-            topics = model.predict_tokens(query_text)
-
-            # Return the result
-            return str(topics), 200
-
-        else:
-            return 'hello world!'
-
-    except Exception as e:
-        # Handle errors
-        return f"An error occurred while processing request: {str(e)}", 500
-
-
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    try:
-        if request.method == 'POST':
-            if request.form.get('user_input_text'): # on a un input, il faut appeler le modele
-                # Get the data from the form
-                user_input_text = request.form.get('user_input_text')
-
-                # ! security check here
-
-                # Make a synchronous request to /predict/ endpoint
-                try:
-                    answer = requests.post('https://www.kiwinokoto.com/predict/', data={'query_text': user_input_text})
-                    result = answer.text
-                except:
-                    return f"An error occurred while during request: {str(e)}", 500
-
-                # Return the result
-                return render_template('index.html', user_input_text=user_input_text, result=result)
-
-            else: # sent empty form
-                return render_template('index.html', user_input_text='PLEASE TYPE SOMETHING !!', result='')
-
-        else: # first time
-            return render_template('index.html', user_input_text='Please type something', result='')
-
-    except Exception as e:
-        # Handle errors
-        return str(e)
-
-
-if __name__ == "__main__":
-    # local
-    # app.run(debug=True)
-
-    # Run the app on 0.0.0.0 (accessible externally) and port 5000
-    app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__=='__main__':
+    main()
