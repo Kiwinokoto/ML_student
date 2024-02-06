@@ -1,0 +1,8 @@
+# folders too big for github :
+
+# our data
+./../0_data/
+
+# the tracking of run info by mlflow
+./artifacts/
+./mlruns/
