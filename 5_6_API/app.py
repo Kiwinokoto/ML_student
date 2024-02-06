@@ -36,7 +36,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsRegressor
 
 import mlflow.pyfunc
-
+# import utils
 
 def turn_str_back_into_list(df):
     """Correct the type change due to .csv export"""
@@ -200,7 +200,19 @@ def endpoint():
         if request.method == 'POST':
             # recup model
             try:
-                model = pickle.load(open('./main_knn.pkl', 'rb'))
+                class CustomUnpickler(pickle.Unpickler):
+                    def find_class(self, module, name):
+                        if name == 'SpecialKnn':
+                            from utils import SpecialKnn
+                            return SpecialKnn
+                        return super().find_class(module, name)
+
+                models = CustomUnpickler(open('./main_knn.pkl', 'rb')).load()
+
+                # models = pickle.load(open('./main_knn.pkl', 'rb'))
+                # Access the model from the list
+                model = models[0]
+
                 # model = SpecialKnn(k=25)
                 model.fit(train_df=train, feature='title_nltk', target='all_tags')
 
