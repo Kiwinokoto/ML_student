@@ -18,6 +18,7 @@ gensim
 pyLDAvis
 tensorflow
 transformers
+datasets
 flask
 joblib
 pytest
