@@ -6,3 +6,6 @@
 # the tracking of run info by mlflow
 1_4_notebooks/artifacts/
 1_4_notebooks/mlruns/
+
+# pre embedded word vectors
+1_4_notebooks/GoogleNews-vectors-negative300.bin.gz

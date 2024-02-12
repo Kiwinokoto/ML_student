@@ -9,7 +9,6 @@ nltk
 spacy
 matplotlib
 plotly
-seaborn
 wordcloud
 pillow
 statsmodels
@@ -18,8 +17,9 @@ scikit-learn
 gensim
 pyLDAvis
 tensorflow
-xgboost
+transformers
 flask
 joblib
 pytest
+gdown
 mlflow==2.9.2
