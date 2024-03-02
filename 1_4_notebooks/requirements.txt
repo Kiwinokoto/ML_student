@@ -1,0 +1,32 @@
+# Pour python, laisser commenté si on utilise virtualenv (sur le serveur). 
+# Décommenter pour conda (utilisé en local).
+
+# quotes not necessary anymore, in recent conda versions. just an old habit.
+
+# 'python>=3.11.5'
+pip
+requests
+pandarallel
+jupyter
+numpy
+pandas
+nltk
+spacy
+matplotlib
+plotly
+wordcloud
+pillow
+statsmodels
+scipy
+scikit-learn
+gensim
+pyLDAvis
+tensorflow
+transformers
+datasets
+flask
+joblib
+pytest
+gdown
+'mlflow=>=2.10'
+evidently
