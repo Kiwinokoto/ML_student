@@ -30,3 +30,4 @@ pytest
 gdown
 'mlflow=>=2.10'
 evidently
+'tokenizers>=0.13.3'
