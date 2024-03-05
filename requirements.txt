@@ -31,3 +31,4 @@ gdown
 'mlflow=>=2.10'
 evidently
 tensorflow-hub
+jupyter_contrib_nbextensions
