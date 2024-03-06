@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, request, jsonify, render_template
 import requests
-import json
+# import json
 import pickle
 
 # trop, nettoyer
-import os, sys, random
-import ast
+# import os, sys, random
+# import ast
 # from zipfile import ZipFile
 import numpy as np
 import pandas as pd
@@ -24,23 +24,24 @@ nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 
 # modeles
-from gensim import corpora
+# from gensim import corpora
 from gensim.corpora import Dictionary
 from gensim.matutils import corpus2dense
-from gensim.matutils import Sparse2Corpus
-from gensim import similarities
+# from gensim.matutils import Sparse2Corpus
+# from gensim import similarities
 
 #
-from sklearn.metrics.pairwise import pairwise_distances
-from sklearn.feature_extraction.text import CountVectorizer
+# from sklearn.metrics.pairwise import pairwise_distances
+# from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsRegressor
 
-import mlflow.pyfunc
 # import utils
 
 
-# fonction preprocessing (remplacer par un import ?)
+app = Flask(__name__)
 
+
+# preprocessing (remplacer par un import ?)
 
 def preprocess_text(text):
     #Cleaning
@@ -101,17 +102,15 @@ def preprocess_text(text):
     return unique_tokens
 
 
-# predict
-
+# prediction
 
 # Load the dictionary from disk
-dictionary_path = "./model/gensim_dict"
-gensim_dict = Dictionary.load(dictionary_path)
+dictionary_path = "./model/gensim_dict.pkl"
+gensim_dict = pickle.load(open(dictionary_path, 'rb'))
 
 # Load the targets
-targets_path = "./model/pickled_targets"
+targets_path = "./model/pickled_targets.pkl"
 targets = pickle.load(open(targets_path, 'rb'))
-
 
 def predict_tokens(model, input_text, gensim_dict=gensim_dict, targets=targets):
     """Prediction method for the custom model."""
@@ -136,11 +135,8 @@ def predict_tokens(model, input_text, gensim_dict=gensim_dict, targets=targets):
 
 
 # recup model
-
-# model = pickle.load(open('./model/pickled_knn', 'rb'))
-
-
-app = Flask(__name__)
+pickled_model_uri = './model/pickled_knn.pkl'
+model = pickle.load(open(pickled_model_uri, 'rb'))
 
 
 @app.route('/predict/', methods=['GET', 'POST'])
@@ -148,32 +144,6 @@ def endpoint():
     # ! move out of route once tested (slows answer)
     try:
         if request.method == 'POST':
-            # recup model
-            try:
-
-
-        else:
-            return 'hello world!'
-
-    except Exception as e:
-        # Handle errors
-        return f"An error occurred while defining processing function: {str(e)}", 500
-
-
-
-    try:
-        if request.method == 'POST':
-            # recup model
-            try:
-                pickled_model_uri = './model/pickled_knn'
-
-                # load the model from disk
-                model = pickle.load(open(pickled_model_uri, 'rb'))
-
-            except Exception as e:
-                # Return a generic error message
-                return f"An error occurred while importing model: {str(e)}", 500
-
             # Get the data from the form
             query_text = request.form.get('query_text')
 
