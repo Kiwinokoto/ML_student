@@ -4,7 +4,7 @@ import requests
 import json
 import pickle
 
-# trop ?
+# trop, nettoyer
 import os, sys, random
 import ast
 # from zipfile import ZipFile
@@ -38,24 +38,8 @@ from sklearn.neighbors import KNeighborsRegressor
 import mlflow.pyfunc
 # import utils
 
-def turn_str_back_into_list(df):
-    """Correct the type change due to .csv export"""
 
-    df['title_nltk'] = df['title_nltk'].apply(ast.literal_eval)
-    df['body_nltk'] = df['body_nltk'].apply(ast.literal_eval)
-    df['title_spacy'] = df['title_spacy'].apply(ast.literal_eval)
-    df['body_spacy'] = df['body_spacy'].apply(ast.literal_eval)
-    df['all_tags'] = df['all_tags'].apply(ast.literal_eval)
-
-
-train = pd.read_csv('./train_bow_uniques.csv', sep=',')
-test = pd.read_csv('./test_bow_uniques.csv', sep=',')
-
-turn_str_back_into_list(train)
-turn_str_back_into_list(test)
-
-
-# fonctions preprocessing (remplacer par un import)
+# fonction preprocessing (remplacer par un import ?)
 
 
 def preprocess_text(text):
@@ -117,78 +101,43 @@ def preprocess_text(text):
     return unique_tokens
 
 
-def token_list_into_bow(X):
-    documents = X.tolist()
-    # print(documents)
-    gensim_dictionary = Dictionary(documents)
-    corpus = [gensim_dictionary.doc2bow(doc) for doc in documents]
-
-    # Convert Gensim corpus to dense matrix
-    bow_matrix = corpus2dense(corpus, num_terms=len(gensim_dictionary)).T
-
-    return gensim_dictionary, bow_matrix
+# predict
 
 
-class SpecialKnn(mlflow.pyfunc.PythonModel):
-    """A special model """
+# Load the dictionary from disk
+dictionary_path = "./model/gensim_dict"
+gensim_dict = Dictionary.load(dictionary_path)
 
-    def __init__(self, k, n=5):
-        """
-        Constructor method. Initializes the model with the specified value `n`.
-
-        Parameters:
-        -----------
-        k : int
-        """
-        self.k = k # nb voisins, shortcut pour l'attribut .n_neighbors
-        self.n = n # nb tags predits
-        self.knn = KNeighborsRegressor(n_neighbors=k)
-        self.dict_X = Dictionary()
-        self.dict_y = Dictionary()
-
-    def load_context(self, context):
-        # when instance is created
-        # on l'utilisera + tard ?
-        pass
+# Load the targets
+targets_path = "./model/pickled_targets"
+targets = pickle.load(open(targets_path, 'rb'))
 
 
-    def fit(self, train_df, feature, target):
-        X_train = train_df[feature].values
-        y_train = train_df[target].values
+def predict_tokens(model, input_text, gensim_dict=gensim_dict, targets=targets):
+    """Prediction method for the custom model."""
+    # Example query
+    query_tokens = preprocess_text(input_text)
+    # print(query_tokens)
+    query_bow = gensim_dict.doc2bow(query_tokens)
+    query_vector = corpus2dense([query_bow], num_terms=len(gensim_dict)).T
 
-        self.dict_X, X_bow_matrix = token_list_into_bow(X_train)
-        self.dict_y, y_bow_matrix = token_list_into_bow(y_train)
+    # Find nearest neighbors
+    _, indices = model.kneighbors(query_vector)
 
-        # Create a KNN Regressor
-        self.knn.fit(X_bow_matrix, y_bow_matrix)
+    # Aggregate tags from neighbors
+    neighbor_tags = [tag for i in indices.flatten() for tag in targets[i]]
 
+    # Predict tags based on most common tags among neighbors
+    predicted_tags = [tag for tag, _ in Counter(neighbor_tags).most_common(n=5)]
+    # 5 tags/question en moyenne mais on peut suggérer +
+    # ici a ameliorer
 
-    def predict_tokens(self, input_text, train_df=train, target='all_tags'):
-        """Prediction method for the custom model."""
-        # Example query
-        query_tokens = preprocess_text(input_text)
-        # print(query_tokens)
-        query_bow = self.dict_X.doc2bow(query_tokens)
-        query_vector = corpus2dense([query_bow], num_terms=len(self.dict_X)).T
+    return predicted_tags
 
-        # Find nearest neighbors
-        _, indices = self.knn.kneighbors(query_vector)
-
-        # Aggregate tags from neighbors
-        neighbor_tags = [tag for i in indices.flatten() for tag in train_df.iloc[i][target]]
-
-        # Predict tags based on most common tags among neighbors
-        predicted_tags = [tag for tag, _ in Counter(neighbor_tags).most_common(n=5)]
-        # 5 tags/question en moyenne mais on peut suggérer +
-        # ici a ameliorer
-
-        return predicted_tags
 
 # recup model
 
-# model = pickle.load(open('./knn_model.pkl', 'rb'))
-# model = SpecialKnn(k=25)
-# model.fit(train_df=train, feature='title_nltk', target='all_tags')
+# model = pickle.load(open('./model/pickled_knn', 'rb'))
 
 
 app = Flask(__name__)
@@ -196,25 +145,30 @@ app = Flask(__name__)
 
 @app.route('/predict/', methods=['GET', 'POST'])
 def endpoint():
+    # ! move out of route once tested (slows answer)
     try:
         if request.method == 'POST':
             # recup model
             try:
-                class CustomUnpickler(pickle.Unpickler):
-                    def find_class(self, module, name):
-                        if name == 'SpecialKnn':
-                            from utils import SpecialKnn
-                            return SpecialKnn
-                        return super().find_class(module, name)
 
-                models = CustomUnpickler(open('./main_knn.pkl', 'rb')).load()
 
-                # models = pickle.load(open('./main_knn.pkl', 'rb'))
-                # Access the model from the list
-                model = models[0]
+        else:
+            return 'hello world!'
 
-                # model = SpecialKnn(k=25)
-                model.fit(train_df=train, feature='title_nltk', target='all_tags')
+    except Exception as e:
+        # Handle errors
+        return f"An error occurred while defining processing function: {str(e)}", 500
+
+
+
+    try:
+        if request.method == 'POST':
+            # recup model
+            try:
+                pickled_model_uri = './model/pickled_knn'
+
+                # load the model from disk
+                model = pickle.load(open(pickled_model_uri, 'rb'))
 
             except Exception as e:
                 # Return a generic error message
@@ -226,11 +180,8 @@ def endpoint():
             # ! security check here
             # + gerer empty if not done before ?
 
-            # Convert the data to uppercase
-            # uppercase_text = query_text.upper()
-
             # use model to predict tags
-            topics = model.predict_tokens(query_text)
+            topics = predict_tokens(model=model, input_text=query_text)
 
             # Return the result
             return str(topics), 200
