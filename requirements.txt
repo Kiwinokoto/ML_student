@@ -3,7 +3,7 @@
 
 # quotes not necessary anymore, in recent conda versions. just an old habit.
 
-'python>=3.11.5'
+python>=3.11.5
 pip
 requests
 pandarallel
@@ -28,7 +28,7 @@ flask
 joblib
 pytest
 gdown
-'mlflow=>=2.10'
+mlflow>=2.10
 evidently
 tensorflow-hub
 jupyter_contrib_nbextensions
