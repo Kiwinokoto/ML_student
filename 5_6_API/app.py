@@ -1,13 +1,11 @@
-# -*- coding: utf-8 -*-
-from flask import Flask, request, jsonify, render_template
-import requests
-# import json
-import pickle
+# script création de l'API (endpoint), via flask
+# Met aussi en ligne une interface (formulaire), permettant de tester le modèle déployé.
 
-# trop, nettoyer
-# import os, sys, random
-# import ast
-# from zipfile import ZipFile
+
+# -*- coding: utf-8 -*-
+from flask import Flask, request, render_template
+import requests
+import pickle
 import numpy as np
 import pandas as pd
 from collections import Counter
@@ -24,15 +22,8 @@ nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 
 # modeles
-# from gensim import corpora
 from gensim.corpora import Dictionary
 from gensim.matutils import corpus2dense
-# from gensim.matutils import Sparse2Corpus
-# from gensim import similarities
-
-#
-# from sklearn.metrics.pairwise import pairwise_distances
-# from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsRegressor
 
 # import utils

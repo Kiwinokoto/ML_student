@@ -1,7 +1,5 @@
 # Pour python, commenter si on utilise virtualenv (sur le serveur). 
-# Laissé décommenter pour conda (utilisé en local).
-
-# quotes not necessary anymore, in recent conda versions. just an old habit.
+# Laisser décommenté pour conda (utilisé en local).
 
 python>=3.11.5
 pip
