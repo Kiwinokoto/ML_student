@@ -27,6 +27,13 @@ jobs:
                   cd ./5_6_API
                   pip install -r requirements.txt
 
+            - name: fetch large object (knn)
+              run: git lfs fetch --all
+              # git lfs fetch origin main
+
+            - name: copy knn to subfolder
+              run: mv pickled_knn.pkl 5_6_API/model/
+
             - name: Run tests
               run: |
                   cd ./5_6_API
