@@ -1,4 +1,4 @@
-name: pytest (+ deploy)
+name: pytest_wf
 
 on:
     push:
