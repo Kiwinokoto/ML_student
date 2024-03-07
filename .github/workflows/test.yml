@@ -30,8 +30,7 @@ jobs:
             - name: check model folder
               run: |
                   cd ./5_6_API/model
-                  ls -la
-                  ls -l pickled_knn.pkl # to check its size
+                  ls -lhR
 
             - name: Run tests
               run: |
