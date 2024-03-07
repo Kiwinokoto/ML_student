@@ -11,4 +11,4 @@
 GoogleNews-vectors-negative300.bin.gz
 
 # our model, ready to be deployed
-./../5_6_API/model
+./../5_6_API/model/pickled_knn.pkl
