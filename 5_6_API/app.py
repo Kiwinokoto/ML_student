@@ -173,7 +173,7 @@ def endpoint():
             # Flask automatically converts Python dictionaries or lists into JSON responses.
 
         else:
-            return 'hello world!'
+            return 'hello world :)'
 
     except Exception as e:
         # Handle errors

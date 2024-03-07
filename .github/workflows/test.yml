@@ -14,7 +14,7 @@ jobs:
         runs-on: ${{ matrix.os }}
 
         steps:
-            - name: Checkout code
+            - name: Checkout code (build)
               uses: actions/checkout@v3
 
             - name: Setup python
@@ -41,7 +41,20 @@ jobs:
                   ls -lhR .git/lfs/objects
                   cp .git/lfs/objects/40/21/4021c2540f4e5c959a65ebc3b288223d5c60efc8e05ddd4e2f4f6de97f78434c ./5_6_API/model/pickled_knn.pkl
 
+            - name: check knn size after fetching + copy
+              run: ls -lhR ./5_6_API/model
+
             - name: Run tests
               run: |
                   cd ./5_6_API
                   pytest
+
+            - name: 📂 Sync files
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              working-directory: ./5_6_API
+              with:
+                  server: ftp.samkirkland.com
+                  username: myFtpUserName
+                  password: ${{ secrets.password_ftp }}
+                  source: app.py # supprimer pour deploiement total, modifier ou ajouter au besoin.
+                  target: /
