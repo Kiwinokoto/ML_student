@@ -31,6 +31,7 @@ jobs:
               run: |
                   cd ./5_6_API/model
                   ls -la
+                  ls -l pickled_knn.pkl # to check its size
 
             - name: Run tests
               run: |
