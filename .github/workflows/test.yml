@@ -33,7 +33,12 @@ jobs:
                   ls -lhR
 
             - name: get hash
-              run: git lfs ls-files
+              run: git lfs ls-files # 4021c2540f
+
+            - name: check large object folder
+              run: |
+                  cd .git/lfs/objects/40/21c2540f
+                  ls -lhR
 
             - name: Run tests
               run: |
