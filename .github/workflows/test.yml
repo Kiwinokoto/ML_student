@@ -32,6 +32,9 @@ jobs:
                   cd ./5_6_API/model
                   ls -lhR
 
+            - name: get hash
+              run: git lfs ls-files
+
             - name: Run tests
               run: |
                   cd ./5_6_API
