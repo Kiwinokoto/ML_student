@@ -1,4 +1,4 @@
-# Pour python, laisser commenter si on utilise virtualenv (pour le serveur ici). 
+# Pour python, laisser commenté si on utilise virtualenv (pour le serveur ici). 
 # Décommenter pour conda (utilisé en local).
 
 # python=3.11.5
