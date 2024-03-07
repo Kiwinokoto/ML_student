@@ -37,7 +37,7 @@ jobs:
             - name: Navigate into the directory containing the large object file
               run: |
                   cd .git/lfs/objects/40
-                  ls la
+                  ls -la
 
             - name: copy knn to subfolder
               run: mv .git/lfs/objects/pickled_knn.pkl 5_6_API/model/
