@@ -22,11 +22,10 @@ jobs:
               with:
                   python-version: ${{ matrix.python-version }}
 
-            - name: Install dependencies
-              # pip install -r requirements.txt
-              run: python -m pip install pytest
-
-            - name: Run tests
+            - name: Install dependencies (from api folder)
               run: |
                   cd ./5_6_API
-                  pytest
+                  pip install -r requirements.txt
+
+            - name: Run tests
+              run: pytest
