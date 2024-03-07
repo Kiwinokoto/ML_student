@@ -38,6 +38,7 @@ jobs:
             - name: check large object folder
               run: |
                   git lfs fetch --all
+                  ls -lhR .git/lfs/objects
                   cd .git/lfs/objects/40/21c2540f
                   ls -lhR
 
