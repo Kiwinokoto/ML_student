@@ -128,13 +128,12 @@ def predict_tokens(model, input_vect, targets=targets):
 
 # recup models
 
-#other
-pickled_model_uri = './model/pickled_lr.pkl'
-model = pickle.load(open(pickled_model_uri, 'rb'))
-
 # knn
-pickled_model_uri = './model/pickled_knn.pkl' # trop lourd pour github sans gestion LFS. à étudier
+pickled_model_uri = './../kaes5648.odns.fr/github/model/pickled_knn.pkl' # dossier sync integration continue
 knn =  pickle.load(open(pickled_model_uri, 'rb'))
+#other
+pickled_model_uri = './../kaes5648.odns.fr/github/model/pickled_lr.pkl' # idem
+model = pickle.load(open(pickled_model_uri, 'rb'))
 
 # recup mlb
 mlb_uri = './model/pickled_mlb.pkl'
