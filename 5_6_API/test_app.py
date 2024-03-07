@@ -13,8 +13,6 @@
 # On va aussi s'assurer que le texte est bien en minuscules, et que les stopwords ont bien été filtrés.
 
 
-import pandas as pd
-import ast
 # Import test function from app.py
 from app import preprocess_text
 
@@ -28,7 +26,15 @@ def test_preprocessing():
     result = preprocess_text(test_query)
     filtered_result = [word for word in result if word not in forbidden]
 
+    # check result is a list
     assert isinstance(result, list)
+
+    # Check result contains only strings
+    assert all(isinstance(word, str) for word in result)
+
+    # no uppercase
     assert result == [x.lower() for x in result]
+
+    # no stopwords
     assert result == filtered_result
 

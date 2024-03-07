@@ -98,7 +98,8 @@ def preprocess_text(text):
 
 # Load the dictionary from disk
 # Get the current working directory
-current_directory = os.getcwd()
+current_directory = os.getcwd() # pour éviter les adresses relatives (à cause de pytest)
+
 # Construct the absolute path to the dictionary file
 dictionary_path = os.path.join(current_directory, "model", "gensim_dict.pkl")
 gensim_dict = pickle.load(open(dictionary_path, 'rb'))
@@ -107,16 +108,12 @@ gensim_dict = pickle.load(open(dictionary_path, 'rb'))
 targets_path = os.path.join(current_directory, "model", "pickled_targets.pkl")
 targets = pickle.load(open(targets_path, 'rb'))
 
-def predict_tokens(model, input_text, gensim_dict=gensim_dict, targets=targets):
+
+def predict_tokens(model, input_vect, targets=targets):
     """Prediction method for the custom model."""
-    # Example query
-    query_tokens = preprocess_text(input_text)
-    # print(query_tokens)
-    query_bow = gensim_dict.doc2bow(query_tokens)
-    query_vector = corpus2dense([query_bow], num_terms=len(gensim_dict)).T
 
     # Find nearest neighbors
-    _, indices = model.kneighbors(query_vector)
+    _, indices = model.kneighbors(input_vect)
 
     # Aggregate tags from neighbors
     neighbor_tags = [tag for i in indices.flatten() for tag in targets[i]]
@@ -129,9 +126,18 @@ def predict_tokens(model, input_text, gensim_dict=gensim_dict, targets=targets):
     return predicted_tags
 
 
-# recup model
-pickled_model_uri = './model/pickled_knn.pkl'
+# recup models
+# knn
+pickled_model_uri = './model/pickled_knn.pkl' # trop lourd pour github sans gestion LFS. à étudier
+knn =  pickle.load(open(pickled_model_uri, 'rb'))
+
+#other
+pickled_model_uri = './model/pickled_lr.pkl'
 model = pickle.load(open(pickled_model_uri, 'rb'))
+
+# recup mlb
+mlb_uri = './model/pickled_mlb.pkl'
+mlb = pickle.load(open(mlb_uri, 'rb'))
 
 
 @app.route('/predict/', methods=['GET', 'POST'])
@@ -145,11 +151,25 @@ def endpoint():
             # ! security check here
             # + gerer empty if not done before ?
 
+            # preprocess query
+            query_tokens = preprocess_text(query_text)
+            query_bow = gensim_dict.doc2bow(query_tokens)
+            query_vector = corpus2dense([query_bow], num_terms=len(gensim_dict)).T
+
             # use model to predict tags
-            topics = predict_tokens(model=model, input_text=query_text)
+
+            # knn
+            prediction_knn = predict_tokens(model=knn, input_vect=query_vector)
+
+            # other models
+            topics = model.predict(query_vector)
+            # Inverse transform predicted labels
+            predicted_tags_tuple = mlb.inverse_transform(topics)
+            prediction_lr = list(predicted_tags_tuple[0]) # mlb retourne un array
 
             # Return the result
-            return str(topics), 200
+            return [str(prediction_knn), str(prediction_lr)], 200
+            # Flask automatically converts Python dictionaries or lists into JSON responses.
 
         else:
             return 'hello world!'
@@ -172,8 +192,10 @@ def home():
                 # Make a synchronous request to /predict/ endpoint
                 try:
                     answer = requests.post('https://www.kiwinokoto.com/predict/', data={'query_text': user_input_text})
-                    result = answer.text
-                except:
+                    result_knn = answer.json()[0]
+                    result_lr = answer.json()[1]
+                    result = [result_knn, result_lr]
+                except Exception as e:
                     return f"An error occurred while during request: {str(e)}", 500
 
                 # Return the result

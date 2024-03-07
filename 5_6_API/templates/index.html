@@ -31,7 +31,8 @@
         </form>
 
         {% if result %}
-        <div><p>Result: {{ result }}</p></div>
+        <div><p>Result knn: {{ result[0] }}</p></div>
+        <div><p>Result lr: {{ result[1] }}</p></div>
         {% endif %}
     </body>
 </html>
