@@ -31,6 +31,9 @@ jobs:
               run: git lfs fetch --all
               # git lfs fetch origin main
 
+            - name: List fetched large object(s)
+              run: ls -la .git/lfs/objects
+
             - name: copy knn to subfolder
               run: mv .git/lfs/objects/pickled_knn.pkl 5_6_API/model/
 
