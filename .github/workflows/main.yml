@@ -56,5 +56,5 @@ jobs:
                   server: ftp.kaes5648.odns.fr
                   username: github@kaes5648.odns.fr
                   password: ${{ secrets.password_ftp }}
-                  # source: app.py # supprimer pour deploiement total, modifier ou ajouter au besoin.
-                  # target: /
+                  source: 5_6_api/app.py # supprimer pour deploiement total, modifier ou ajouter au besoin.
+                  target: /
