@@ -129,10 +129,10 @@ def predict_tokens(model, input_vect, targets=targets):
 # recup models
 
 # knn
-pickled_model_uri = './../kaes5648.odns.fr/github/model/pickled_knn.pkl' # dossier sync integration continue
+pickled_model_uri = './model/pickled_knn.pkl' # dossier sync integration continue
 knn =  pickle.load(open(pickled_model_uri, 'rb'))
 #other
-pickled_model_uri = './../kaes5648.odns.fr/github/model/pickled_lr.pkl' # idem
+pickled_model_uri = './model/pickled_lr.pkl' # idem
 model = pickle.load(open(pickled_model_uri, 'rb'))
 
 # recup mlb
