@@ -27,10 +27,10 @@ jobs:
                   cd ./5_6_API
                   pip install -r requirements.txt
 
-            - name: Find large file
+            - name: check model folder
               run: |
-                  large_file_path=$(find . -name "pickled_knn.pkl" -type f)
-                  cp "$large_file_path" 5_6_API/model/
+                  cd ./5_6_API/model
+                  ls -la
 
             - name: Run tests
               run: |
