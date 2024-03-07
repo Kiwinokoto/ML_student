@@ -1,4 +1,4 @@
-name: pytest_wf
+name: build and deploy
 
 on: [push]
 
@@ -10,7 +10,7 @@ jobs:
                 os: [ubuntu-latest]
                 python-version:
                     - '3.11.5'
-        name: test_run
+        name: build, run unit tests, deploy
         runs-on: ${{ matrix.os }}
 
         steps:
@@ -54,6 +54,6 @@ jobs:
               # working-directory: ./5_6_API
               with:
                   server: ftp.kaes5648.odns.fr
-                  username: github@kaes5648.odns.fr
+                  username: deploy@kaes5648.odns.fr
                   password: ${{ secrets.password_ftp }}
                   local-dir: 5_6_API/ # Adjust the path as needed
