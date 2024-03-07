@@ -41,6 +41,7 @@ jobs:
                   ls -lhR .git/lfs/objects
                   cd .git/lfs/objects/40/21c2540f
                   ls -lhR
+                  cp .git/lfs/objects/40/21/4021c2540f4e5c959a65ebc3b288223d5c60efc8e05ddd4e2f4f6de97f78434c ./5_6_API/model/pickled_knn.pkl
 
             - name: Run tests
               run: |
