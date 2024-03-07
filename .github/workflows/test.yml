@@ -27,20 +27,10 @@ jobs:
                   cd ./5_6_API
                   pip install -r requirements.txt
 
-            - name: fetch large object (knn)
-              run: git lfs fetch --all
-              # git lfs fetch origin main
-
-            - name: List fetched large object(s)
-              run: ls -la .git/lfs/objects
-
-            - name: Navigate into the directory containing the large object file
+            - name: Find large file
               run: |
-                  cd .git/lfs/objects/40/21
-                  ls -la
-
-            - name: copy knn to subfolder
-              run: mv .git/lfs/objects/pickled_knn.pkl 5_6_API/model/
+                  large_file_path=$(find . -name "pickled_knn.pkl" -type f)
+                  cp "$large_file_path" 5_6_API/model/
 
             - name: Run tests
               run: |
