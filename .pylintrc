@@ -7,7 +7,7 @@
 [MASTER]
 
 # Ignore certain errors or warnings
-# C0303 = trailing whitespaces, should be fixed by vscode using Autopep8 now
+# C0303 = trailing whitespaces, fixed by vscode using Autopep8
 # C0301 = line too long
 disable = C0301
 

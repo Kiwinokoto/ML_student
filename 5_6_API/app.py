@@ -3,6 +3,7 @@
 
 
 # -*- coding: utf-8 -*-
+import os
 from flask import Flask, request, render_template
 import requests
 import pickle
@@ -96,11 +97,14 @@ def preprocess_text(text):
 # prediction
 
 # Load the dictionary from disk
-dictionary_path = "./model/gensim_dict.pkl"
+# Get the current working directory
+current_directory = os.getcwd()
+# Construct the absolute path to the dictionary file
+dictionary_path = os.path.join(current_directory, "model", "gensim_dict.pkl")
 gensim_dict = pickle.load(open(dictionary_path, 'rb'))
 
 # Load the targets
-targets_path = "./model/pickled_targets.pkl"
+targets_path = os.path.join(current_directory, "model", "pickled_targets.pkl")
 targets = pickle.load(open(targets_path, 'rb'))
 
 def predict_tokens(model, input_text, gensim_dict=gensim_dict, targets=targets):

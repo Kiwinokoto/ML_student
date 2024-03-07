@@ -1,38 +1,45 @@
-## objectif du projet : deployer en ligne un modele de prediction de tags
+## Objectif du projet : deployer en ligne un modele de prédiction de tags
 
 
-## découpage des dossiers :
-
+## Découpage des dossiers : 
+## les numéros correspondent aux livrables openclassrooms.
+## Si un objet est crée par un script (notebook), le nom du script est entre crochets [...]
 
 0_data : nos donnees, contient 2 sous-dossiers
 
-    raw_data = les questions stackoverflow telechargees par requete sql (compressees .zip)
-    cleaned_data = le resultat du preprocessing, nos questions transformees en listes de tokens et filtrees, pretes a etre embedded 
-                   + la liste des mots interdits (stopwords + fitre frequence)
+    raw_data = les questions stackoverflow telechargees par requete sql (compressees .zip)    [ntbk 2]
+    cleaned_data = le resultat du preprocessing, nos questions transformees en listes de tokens et filtrees, pretes a etre embedded    [ntbk 1]
 
 1_4_notebooks : 
 
     les livrables 1 a 4 du projet 
-    + environnement mlfow : 2 sous-dossiers, artifacts et mlruns
+    l'environnement mlfow : 2 sous-dossiers, artifacts et mlruns    [ntbk 4.1]
+    forbidden_words = la liste des mots interdits (stopwords + fitre frequence)    [ntbk 1]
+    GoogleNews-vectors = modèle d'embedding (word2vec) (trop volumineux pour github)    [ntbk 4.2]
 
 5_6_API :
 
     app.py = le code de l'api (endpoint) https://www.kiwinokoto.com/predict
     templates/index.html = le point d'entree (formulaire html) https://www.kiwinokoto.com/ 
+    model = le modèle à déployer    [ntbk 4.1]
     requirements.txt = les packages utilises cote serveur (virtualenv)
+    forbidden_words = la liste des mots interdits, exportée    [ntbk 4.1]
     fichier_introductif = vous etes ici
 
 7_8_note_presentation : contient 2 fichiers
 
-    note_technique_MLOps.odt = la dissert blabla mlops
+    note_technique_MLOps.odt = blabla mlops
     presentation.odp = les slides
 
-tests : nos T.U. pytest
+
+tests : nos T.U. pytest, réalisés automatiquement à chaque push vers la branche main, via github actions
 
 
-# fichiers racine :
+## fichiers racine :
 
     README.md = le fichier introductif pour github
     requirements.txt = environnement local (pour conda, 
-                       pour l'utiliser avec virtualenv il faut décommenter la premiere ligne : python==3.11.5)
-    3 fichiers caches : configuration git, prettier (extension vscode), pylint
+                       pour l'utiliser avec virtualenv il faut décommenter la premiere ligne : python=3.11.5)
+    versions_packages = les versions exactes pour reference (conda list --export >> versions_packages)    [console]
+
+    3 fichiers caches : configuration git (.gitignore), prettier (extension vscode), pylint
