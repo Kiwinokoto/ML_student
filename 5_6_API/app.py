@@ -127,13 +127,14 @@ def predict_tokens(model, input_vect, targets=targets):
 
 
 # recup models
-# knn
-pickled_model_uri = './model/pickled_knn.pkl' # trop lourd pour github sans gestion LFS. à étudier
-knn =  pickle.load(open(pickled_model_uri, 'rb'))
 
 #other
 pickled_model_uri = './model/pickled_lr.pkl'
 model = pickle.load(open(pickled_model_uri, 'rb'))
+
+# knn
+pickled_model_uri = './model/pickled_knn.pkl' # trop lourd pour github sans gestion LFS. à étudier
+knn =  pickle.load(open(pickled_model_uri, 'rb'))
 
 # recup mlb
 mlb_uri = './model/pickled_mlb.pkl'
