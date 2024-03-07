@@ -32,7 +32,7 @@ jobs:
               # git lfs fetch origin main
 
             - name: copy knn to subfolder
-              run: mv pickled_knn.pkl 5_6_API/model/
+              run: mv .git/lfs/objects/pickled_knn.pkl 5_6_API/model/
 
             - name: Run tests
               run: |
