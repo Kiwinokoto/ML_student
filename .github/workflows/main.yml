@@ -53,8 +53,8 @@ jobs:
               uses: SamKirkland/FTP-Deploy-Action@v4.3.5
               working-directory: ./5_6_API
               with:
-                  server: ftp.samkirkland.com
-                  username: myFtpUserName
+                  server: prise.o2switch.net
+                  username: github
                   password: ${{ secrets.password_ftp }}
                   source: app.py # supprimer pour deploiement total, modifier ou ajouter au besoin.
                   target: /
