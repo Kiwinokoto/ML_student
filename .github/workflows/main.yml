@@ -48,3 +48,13 @@ jobs:
               run: |
                   cd ./5_6_API
                   pytest
+
+            - name: 📂 Sync files
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              working-directory: ./5_6_API
+              with:
+                  server: ftp.kaes5648.odns.fr
+                  username: github@kaes5648.odns.fr
+                  password: ${{ secrets.password_ftp }}
+                  source: app.py # supprimer pour deploiement total, modifier ou ajouter au besoin.
+                  target: /
