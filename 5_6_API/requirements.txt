@@ -1,18 +1,31 @@
-# Pour python, laisser commenté si on utilise virtualenv (pour le serveur ici). 
-# Décommenter pour conda (utilisé en local).
+# Pour python, commenter si on utilise virtualenv (sur le serveur). 
+# Laisser décommenté pour conda (utilisé en local).
 
-# python=3.11.5
+#python=3.11.5
 pip
 requests
+pandarallel
+jupyter
 numpy
 pandas
 nltk
+spacy
+matplotlib
+plotly
+wordcloud
+pillow
 statsmodels
 scipy
 scikit-learn
 gensim
+pyLDAvis
+tensorflow
+transformers
 datasets
 flask
+joblib
 pytest
 gdown
-beautifulsoup4
+evidently
+tensorflow-hub
+jupyter_contrib_nbextensions

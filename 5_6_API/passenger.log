@@ -1,0 +1,311 @@
+App 372577 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 372577 output: [nltk_data]   Package punkt is already up-to-date!
+App 372577 output: [nltk_data] Downloading package stopwords to
+App 372577 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 372577 output: [nltk_data]   Package stopwords is already up-to-date!
+App 372577 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 372577 output: [nltk_data]   Package wordnet is already up-to-date!
+App 372577 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 372577 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 372577 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 372577 output: [nltk_data]       date!
+App 372577 output: [ pid=372577, time=2024-03-08 10:27:09,605 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 372577 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 372577 output:   warnings.warn(
+App 372577 output: [ pid=372577, time=2024-03-08 10:27:09,742 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 372577 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 372577 output:   warnings.warn(
+App 409856 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 409856 output: [nltk_data]   Package punkt is already up-to-date!
+App 409856 output: [nltk_data] Downloading package stopwords to
+App 409856 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 409856 output: [nltk_data]   Package stopwords is already up-to-date!
+App 409856 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 409856 output: [nltk_data]   Package wordnet is already up-to-date!
+App 409856 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 409856 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 409856 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 409856 output: [nltk_data]       date!
+App 409856 output: [ pid=409856, time=2024-03-08 10:40:59,350 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 409856 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 409856 output:   warnings.warn(
+App 409856 output: [ pid=409856, time=2024-03-08 10:40:59,354 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 409856 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 409856 output:   warnings.warn(
+App 409856 output: [ pid=409856, time=2024-03-08 10:40:59,371 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 409856 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 409856 output:   warnings.warn(
+App 414511 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 414511 output: [nltk_data]   Package punkt is already up-to-date!
+App 414511 output: [nltk_data] Downloading package stopwords to
+App 414511 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 414511 output: [nltk_data]   Package stopwords is already up-to-date!
+App 414511 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 414511 output: [nltk_data]   Package wordnet is already up-to-date!
+App 414511 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 414511 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 414511 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 414511 output: [nltk_data]       date!
+App 414511 output: [ pid=414511, time=2024-03-08 10:42:32,933 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 414511 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 414511 output:   warnings.warn(
+App 414511 output: [ pid=414511, time=2024-03-08 10:42:32,937 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 414511 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 414511 output:   warnings.warn(
+App 414511 output: [ pid=414511, time=2024-03-08 10:42:32,937 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 414511 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 414511 output:   warnings.warn(
+App 415286 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 415286 output: [nltk_data]   Package punkt is already up-to-date!
+App 415286 output: [nltk_data] Downloading package stopwords to
+App 415286 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 415286 output: [nltk_data]   Package stopwords is already up-to-date!
+App 415286 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 415286 output: [nltk_data]   Package wordnet is already up-to-date!
+App 415286 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 415286 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 415286 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 415286 output: [nltk_data]       date!
+App 415286 output: [ pid=415286, time=2024-03-08 10:42:54,695 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 415286 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 415286 output:   warnings.warn(
+App 415286 output: [ pid=415286, time=2024-03-08 10:42:54,699 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 415286 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 415286 output:   warnings.warn(
+App 415286 output: [ pid=415286, time=2024-03-08 10:42:54,699 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 415286 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 415286 output:   warnings.warn(
+App 416966 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 416966 output: [nltk_data]   Package punkt is already up-to-date!
+App 416966 output: [nltk_data] Downloading package stopwords to
+App 416966 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 416966 output: [nltk_data]   Package stopwords is already up-to-date!
+App 416966 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 416966 output: [nltk_data]   Package wordnet is already up-to-date!
+App 416966 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 416966 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 416966 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 416966 output: [nltk_data]       date!
+App 416966 output: [ pid=416966, time=2024-03-08 10:43:12,291 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 416966 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 416966 output:   warnings.warn(
+App 416966 output: [ pid=416966, time=2024-03-08 10:43:12,295 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 416966 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 416966 output:   warnings.warn(
+App 416966 output: [ pid=416966, time=2024-03-08 10:43:12,295 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 416966 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 416966 output:   warnings.warn(
+App 416966 output: [ pid=416966, time=2024-03-08 10:43:23,421 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 416966 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 416966 output:   warnings.warn(
+App 416966 output: [ pid=416966, time=2024-03-08 10:43:25,339 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+App 416966 output: found 0 physical cores < 1
+App 416966 output: Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+App 416966 output:   warnings.warn(
+App 416966 output:   File "/home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py", line 282, in _count_physical_cores
+App 416966 output:     raise ValueError(f"found {cpu_count_physical} physical cores < 1")
+App 416966 output: [ pid=416966, time=2024-03-08 10:44:45,719 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 416966 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 416966 output:   warnings.warn(
+App 442533 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 442533 output: [nltk_data]   Package punkt is already up-to-date!
+App 442533 output: [nltk_data] Downloading package stopwords to
+App 442533 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 442533 output: [nltk_data]   Package stopwords is already up-to-date!
+App 442533 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 442533 output: [nltk_data]   Package wordnet is already up-to-date!
+App 442533 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 442533 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 442533 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 442533 output: [nltk_data]       date!
+App 442533 output: [ pid=442533, time=2024-03-08 10:52:29,835 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 442533 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 442533 output:   warnings.warn(
+App 442533 output: [ pid=442533, time=2024-03-08 10:52:29,839 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 442533 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 442533 output:   warnings.warn(
+App 442533 output: [ pid=442533, time=2024-03-08 10:52:29,839 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 442533 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 442533 output:   warnings.warn(
+App 442533 output: [ pid=442533, time=2024-03-08 10:52:30,584 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 442533 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 442533 output:   warnings.warn(
+App 444956 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 444956 output: [nltk_data]   Package punkt is already up-to-date!
+App 444956 output: [nltk_data] Downloading package stopwords to
+App 444956 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 444956 output: [nltk_data]   Package stopwords is already up-to-date!
+App 444956 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 444956 output: [nltk_data]   Package wordnet is already up-to-date!
+App 444956 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 444956 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 444956 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 444956 output: [nltk_data]       date!
+App 444956 output: [ pid=444956, time=2024-03-08 10:53:25,561 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 444956 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 444956 output:   warnings.warn(
+App 444956 output: [ pid=444956, time=2024-03-08 10:53:25,566 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 444956 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 444956 output:   warnings.warn(
+App 444956 output: [ pid=444956, time=2024-03-08 10:53:25,566 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 444956 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 444956 output:   warnings.warn(
+App 444956 output: [ pid=444956, time=2024-03-08 10:53:26,301 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 444956 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 444956 output:   warnings.warn(
+App 444956 output: [ pid=444956, time=2024-03-08 10:53:28,724 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+App 444956 output: found 0 physical cores < 1
+App 444956 output: Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+App 444956 output:   warnings.warn(
+App 444956 output:   File "/home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py", line 282, in _count_physical_cores
+App 444956 output:     raise ValueError(f"found {cpu_count_physical} physical cores < 1")
+App 450356 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 450356 output: [nltk_data]   Package punkt is already up-to-date!
+App 450356 output: [nltk_data] Downloading package stopwords to
+App 450356 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 450356 output: [nltk_data]   Package stopwords is already up-to-date!
+App 450356 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 450356 output: [nltk_data]   Package wordnet is already up-to-date!
+App 450356 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 450356 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 450356 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 450356 output: [nltk_data]       date!
+App 450356 output: [ pid=450356, time=2024-03-08 10:55:11,560 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450356 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450356 output:   warnings.warn(
+App 450356 output: [ pid=450356, time=2024-03-08 10:55:11,564 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450356 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450356 output:   warnings.warn(
+App 450356 output: [ pid=450356, time=2024-03-08 10:55:11,564 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450356 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450356 output:   warnings.warn(
+App 450356 output: [ pid=450356, time=2024-03-08 10:55:12,361 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450356 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450356 output:   warnings.warn(
+App 450839 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 450839 output: [nltk_data]   Package punkt is already up-to-date!
+App 450839 output: [nltk_data] Downloading package stopwords to
+App 450839 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 450839 output: [nltk_data]   Package stopwords is already up-to-date!
+App 450839 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 450839 output: [nltk_data]   Package wordnet is already up-to-date!
+App 450839 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 450839 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 450839 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 450839 output: [nltk_data]       date!
+App 450839 output: [ pid=450839, time=2024-03-08 10:55:21,108 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450839 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450839 output:   warnings.warn(
+App 450839 output: [ pid=450839, time=2024-03-08 10:55:21,112 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450839 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450839 output:   warnings.warn(
+App 450839 output: [ pid=450839, time=2024-03-08 10:55:21,113 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450839 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450839 output:   warnings.warn(
+App 450839 output: [ pid=450839, time=2024-03-08 10:55:21,889 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 450839 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 450839 output:   warnings.warn(
+App 450839 output: [ pid=450839, time=2024-03-08 10:55:23,297 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+App 450839 output: found 0 physical cores < 1
+App 450839 output: Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+App 450839 output:   warnings.warn(
+App 450839 output:   File "/home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py", line 282, in _count_physical_cores
+App 450839 output:     raise ValueError(f"found {cpu_count_physical} physical cores < 1")
+App 472820 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 472820 output: [nltk_data]   Package punkt is already up-to-date!
+App 472820 output: [nltk_data] Downloading package stopwords to
+App 472820 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 472820 output: [nltk_data]   Package stopwords is already up-to-date!
+App 472820 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 472820 output: [nltk_data]   Package wordnet is already up-to-date!
+App 472820 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 472820 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 472820 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 472820 output: [nltk_data]       date!
+App 472820 output: [ pid=472820, time=2024-03-08 11:03:05,189 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 472820 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 472820 output:   warnings.warn(
+App 472820 output: [ pid=472820, time=2024-03-08 11:03:05,193 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 472820 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 472820 output:   warnings.warn(
+App 472820 output: [ pid=472820, time=2024-03-08 11:03:05,194 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 472820 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 472820 output:   warnings.warn(
+App 472820 output: [ pid=472820, time=2024-03-08 11:03:05,927 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 472820 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 472820 output:   warnings.warn(
+App 472820 output: [ pid=472820, time=2024-03-08 11:03:07,379 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+App 472820 output: found 0 physical cores < 1
+App 472820 output: Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+App 472820 output:   warnings.warn(
+App 472820 output:   File "/home/kaes5648/virtualenv/py_apps/3.11/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py", line 282, in _count_physical_cores
+App 472820 output:     raise ValueError(f"found {cpu_count_physical} physical cores < 1")
+App 476973 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 476973 output: [nltk_data]   Package punkt is already up-to-date!
+App 476973 output: [nltk_data] Downloading package stopwords to
+App 476973 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 476973 output: [nltk_data]   Package stopwords is already up-to-date!
+App 476973 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 476973 output: [nltk_data]   Package wordnet is already up-to-date!
+App 476973 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 476973 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 476973 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 476973 output: [nltk_data]       date!
+App 476973 output: [ pid=476973, time=2024-03-08 11:04:47,690 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 476973 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 476973 output:   warnings.warn(
+App 476973 output: [ pid=476973, time=2024-03-08 11:04:47,694 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 476973 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 476973 output:   warnings.warn(
+App 476973 output: [ pid=476973, time=2024-03-08 11:04:47,695 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 476973 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 476973 output:   warnings.warn(
+App 476973 output: [ pid=476973, time=2024-03-08 11:04:48,516 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 476973 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 476973 output:   warnings.warn(
+App 477330 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 477330 output: [nltk_data]   Package punkt is already up-to-date!
+App 477330 output: [nltk_data] Downloading package stopwords to
+App 477330 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 477330 output: [nltk_data]   Package stopwords is already up-to-date!
+App 477330 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 477330 output: [nltk_data]   Package wordnet is already up-to-date!
+App 477330 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 477330 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 477330 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 477330 output: [nltk_data]       date!
+App 477330 output: [ pid=477330, time=2024-03-08 11:04:50,974 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 477330 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 477330 output:   warnings.warn(
+App 477330 output: [ pid=477330, time=2024-03-08 11:04:50,978 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 477330 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 477330 output:   warnings.warn(
+App 477330 output: [ pid=477330, time=2024-03-08 11:04:50,978 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 477330 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 477330 output:   warnings.warn(
+App 477330 output: [ pid=477330, time=2024-03-08 11:04:51,737 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 477330 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 477330 output:   warnings.warn(
+App 535012 output: [nltk_data] Downloading package punkt to /home/kaes5648/nltk_data...
+App 535012 output: [nltk_data]   Package punkt is already up-to-date!
+App 535012 output: [nltk_data] Downloading package stopwords to
+App 535012 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 535012 output: [nltk_data]   Package stopwords is already up-to-date!
+App 535012 output: [nltk_data] Downloading package wordnet to /home/kaes5648/nltk_data...
+App 535012 output: [nltk_data]   Package wordnet is already up-to-date!
+App 535012 output: [nltk_data] Downloading package averaged_perceptron_tagger to
+App 535012 output: [nltk_data]     /home/kaes5648/nltk_data...
+App 535012 output: [nltk_data]   Package averaged_perceptron_tagger is already up-to-
+App 535012 output: [nltk_data]       date!
+App 535012 output: [ pid=535012, time=2024-03-08 11:26:19,465 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator SGDClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 535012 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 535012 output:   warnings.warn(
+App 535012 output: [ pid=535012, time=2024-03-08 11:26:19,470 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiOutputClassifier from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 535012 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 535012 output:   warnings.warn(
+App 535012 output: [ pid=535012, time=2024-03-08 11:26:19,470 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator MultiLabelBinarizer from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 535012 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 535012 output:   warnings.warn(
+App 535012 output: [ pid=535012, time=2024-03-08 11:26:20,305 ]: /home/kaes5648/virtualenv/py_apps/3.11/lib64/python3.11/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator KNeighborsRegressor from version 1.3.0 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+App 535012 output: https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+App 535012 output:   warnings.warn(

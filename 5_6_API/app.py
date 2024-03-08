@@ -137,9 +137,6 @@ model = pickle.load(open(pickled_model_uri, 'rb'))
 mlb_uri = './model/pickled_mlb.pkl'
 mlb = pickle.load(open(mlb_uri, 'rb'))
 
-# knn
-pickled_knn_uri = './model/pickled_knn.pkl' # dossier sync integration continue
-knn =  pickle.load(open(pickled_knn_uri, 'rb'))
 
 
 @app.route('/predict/', methods=['GET', 'POST'])
@@ -148,11 +145,10 @@ def endpoint():
     try:
         # knn
         pickled_knn_uri = './model/pickled_knn.pkl' # dossier sync integration continue
-        #knn =  pickle.load(open(pickled_knn_uri, 'rb'))
+        knn =  pickle.load(open(pickled_knn_uri, 'rb'))
     except Exception as e:
         # Handle errors
         return f"An error occurred while unpickling knn: {str(e)}", 500
-
 
     try:
         if request.method == 'POST':
