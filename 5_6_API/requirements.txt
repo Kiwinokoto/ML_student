@@ -15,4 +15,4 @@ datasets
 flask
 pytest
 gdown
-
+beautifulsoup4

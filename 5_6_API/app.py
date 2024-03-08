@@ -128,21 +128,32 @@ def predict_tokens(model, input_vect, targets=targets):
 
 # recup models
 
-# knn
-pickled_model_uri = './model/pickled_knn.pkl' # dossier sync integration continue
-knn =  pickle.load(open(pickled_model_uri, 'rb'))
 #other
 pickled_model_uri = './model/pickled_lr.pkl' # idem
 model = pickle.load(open(pickled_model_uri, 'rb'))
+
 
 # recup mlb
 mlb_uri = './model/pickled_mlb.pkl'
 mlb = pickle.load(open(mlb_uri, 'rb'))
 
+# knn
+pickled_knn_uri = './model/pickled_knn.pkl' # dossier sync integration continue
+knn =  pickle.load(open(pickled_knn_uri, 'rb'))
+
 
 @app.route('/predict/', methods=['GET', 'POST'])
 def endpoint():
     # ! move out of route once tested (slows answer)
+    try:
+        # knn
+        pickled_knn_uri = './model/pickled_knn.pkl' # dossier sync integration continue
+        #knn =  pickle.load(open(pickled_knn_uri, 'rb'))
+    except Exception as e:
+        # Handle errors
+        return f"An error occurred while unpickling knn: {str(e)}", 500
+
+
     try:
         if request.method == 'POST':
             # Get the data from the form
