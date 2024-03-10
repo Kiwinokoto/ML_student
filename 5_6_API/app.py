@@ -146,6 +146,7 @@ def endpoint():
         # knn
         pickled_knn_uri = './model/pickled_knn.pkl' # dossier sync integration continue
         knn =  pickle.load(open(pickled_knn_uri, 'rb'))
+
     except Exception as e:
         # Handle errors
         return f"An error occurred while unpickling knn: {str(e)}", 500

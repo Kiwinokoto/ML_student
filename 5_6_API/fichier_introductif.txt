@@ -1,21 +1,29 @@
-## Objectif du projet : deployer en ligne un modele de prédiction de tags
+## Objectif du projet : déployer en ligne un modele de prédiction de tags
 
 
 ## Découpage des dossiers : 
 ## les numéros correspondent aux livrables openclassrooms.
-## Si un objet est crée par un script (notebook), le nom du script est entre crochets [...]
 
-0_data : nos donnees, contient 2 sous-dossiers
+## Si un objet est crée après l'exécution d'un script (notebook), 
+## l'objet est entre () et le nom du script est entre crochets [...]
 
-    raw_data = les questions stackoverflow telechargees par requete sql (compressees .zip)    [ntbk 2]
-    cleaned_data = le resultat du preprocessing, nos questions transformees en listes de tokens et filtrees, pretes a etre embedded    [ntbk 1]
+
+*** Dossiers racine :
+
+
+0_data : nos données, contient 2 sous-dossiers
+
+    (raw_data) = les questions stackoverflow téléchargées par requête sql (compressées .zip)    [ntbk 2]
+    (cleaned_data) = le résultat du preprocessing : nos questions transformées en listes de tokens et filtrées, prêtes à e être embedded (.csv)    [ntbk 1]
+
 
 1_4_notebooks : 
 
-    les livrables 1 a 4 du projet 
-    l'environnement mlfow : 2 sous-dossiers, artifacts et mlruns    [ntbk 4.1]
-    forbidden_words = la liste des mots interdits (stopwords + fitre frequence)    [ntbk 1]
-    GoogleNews-vectors = modèle d'embedding (word2vec) (trop volumineux pour github)    [ntbk 4.2]
+    les livrables 1 à 4 du projet 
+    (environnement mlfow) : 2 sous-dossiers, artifacts et mlruns    [ntbk 4.1, mlflow ui en console]
+    (forbidden_words) = la liste des mots interdits (stopwords + fitre fréquence)    [ntbk 1]
+    (GoogleNews-vectors) = modèle d'embedding (word2vec) (trop volumineux pour github)    [ntbk 4.2]
+
 
 5_6_API :
 
@@ -23,23 +31,37 @@
     templates/index.html = le point d'entree (formulaire html) https://www.kiwinokoto.com/ 
     model = le modèle à déployer    [ntbk 4.1]
     requirements.txt = les packages utilises cote serveur (virtualenv)
-    forbidden_words = la liste des mots interdits, exportée    [ntbk 4.1]
+    (forbidden_words) = la liste des mots interdits, exportée    [ntbk 4.1]
     fichier_introductif = vous etes ici
+    passenger.log = les erreurs côté serveur, particulierement utile pour la compatibilité des environnements
+    Oudelet_Kevin_6_point__entree_API_271123 = lien vers la page web contenant le formulaire qui permet d'envoyer une requete à l'API
+
 
 7_8_note_presentation : contient 2 fichiers
 
-    note_technique_MLOps.odt = blabla mlops
-    presentation.odp = les slides
+    Oudelet_Kevin_7_note_technique_MLOps_271123.odt = Présentation d'outils, pistes pour généraliser l'approche mlops 
+    Oudelet_Kevin_8_presentation_271123.odp = les slides qui structurent / illustrent les points-clés du projet pour la présentation orale (soutenance)
 
 
-tests : nos T.U. pytest, réalisés automatiquement à chaque push vers la branche main, via github actions
+tests : une fonction décorative pour les T.U. pytest, réalisés automatiquement à chaque push vers la branche main, via github actions
 
 
-## fichiers racine :
+*** fichiers racine :
+
 
     README.md = le fichier introductif pour github
     requirements.txt = environnement local (pour conda, 
                        pour l'utiliser avec virtualenv il faut décommenter la premiere ligne : python=3.11.5)
     versions_packages = les versions exactes pour reference (conda list --export >> versions_packages)    [console]
 
-    3 fichiers caches : configuration git (.gitignore), prettier (extension vscode), pylint
+
+*** + 3 Dossier et 4 fichiés cachés :
+
+    .git : créé lors de l'initialisation du dossier comme répo Git
+    .github : contient notre workflow, qui exécute les pytests et le déploiement auto de l'API
+    .pytest_cache : infos relatives à l'exéction des tests unitaires.
+
+    fichiers : configuration git (.gitignore), prettier (extension vscode), pylint, .gitattributes (tracking de notre knn par git LFS)
+
+
+
