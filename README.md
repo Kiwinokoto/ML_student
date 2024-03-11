@@ -33,7 +33,7 @@ Sur ce projet, la NMF est un bon exemple d'outil qui a une certaine "évidence".
 quand elle est possible, pourrrait être interprêtée comme le découpage d'un corpus en thèmes (topics).
 En revanche pour la LDA, je voudrais bien savoir qui a pensé à bricoler un truc pareil !
 Il s'agit d'un algorithme de génération aléatoire de texte que l'on entraine à produire du texte similaire à ceux de notre corpus.
-On observe ensuite les paramètres internes de la LDA pour décrire le corpus d'origine. A bit convoluted, isn't it ? C'est du génie. Ou de la folie pure. Ou les 2 ?
+On observe ensuite les paramètres internes de la LDA pour décrire le corpus d'origine. A bit convoluted, isn't it ? C'est du génie, ou de la folie pure !
 
 - En termes de machine learning, nous sommes ici sur un cas particulier très intéressant de classification multilabels, qui pose des problèmes spécifiques.
 La mesure des scores est un point crucial. Le score utilisé doit être cohérent pour différents types de modèles (supervisés et non-supervisés), robuste à certaines modifications des hyperparamètres (comme le nombre de tags prédits), interprétable, compatible avec toutes les architectures utilisées (y compris tensorflow..) et les différents types d'outputs (en particulier quand il s'agit de distributions selon une loi multinomiale). Autrement dit, si la similarité Jaccard n'existait pas, il faudrait l'inventer !
